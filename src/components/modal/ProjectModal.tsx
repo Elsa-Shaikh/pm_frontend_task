@@ -47,6 +47,8 @@ const ProjectModal = ({
   });
 
   useEffect(() => {
+    if (!open) return;
+
     if (defaultValues) {
       reset(
         {
@@ -70,7 +72,7 @@ const ProjectModal = ({
         status: "Pending",
       });
     }
-  }, [defaultValues, reset]);
+  }, [defaultValues, reset, open]);
   const handleClose = () => {
     onClose();
   };
