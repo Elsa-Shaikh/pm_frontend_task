@@ -27,6 +27,5 @@ export const STATUS_OPTIONS = [
 
 export const filter_options = [
   { label: "Sort by date", value: "asc" },
-  // { label: "Upcoming First", value: "asc" },
   { label: "Most Recent", value: "desc" },
 ];
